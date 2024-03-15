@@ -190,13 +190,15 @@
 	<script src="swiper/swiper-bundle.min.js" type="text/javascript"></script>
 	<script>
 		var swiper = new Swiper(".mySwiper", {
+			loop: true,
+			autoplay: {
+				delay: 3000,
+				stopOnLastSlide: false,
+				disableOnInteraction: false,
+			},
 			pagination: {
 				el: ".swiper-pagination",
 				type: "fraction",
-			},
-			navigation: {
-				nextEl: ".swiper-button-next",
-				prevEl: ".swiper-button-prev",
 			},
 		});
     </script>
